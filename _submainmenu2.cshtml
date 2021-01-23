@@ -1,0 +1,8 @@
+﻿@model IEnumerable<PizzaHut.Models.Mmenu>
+@{
+    var mainmenuitem = ViewBag.mainmenuitem;
+
+}
+<li class="menu-item ">
+    <a href="~/@mainmenuitem.link">@mainmenuitem.name</a>
+</li>

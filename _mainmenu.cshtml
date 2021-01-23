@@ -1,0 +1,8 @@
+﻿@model IEnumerable<PizzaHut.Models.Mmenu>
+<ul class="main-menu menu-right main-menu--white li-last-0">
+    @foreach (var item in Model)
+    {
+        @Html.Action("submainmenu", "Modules", new { id = item.ID })
+    }
+
+</ul>

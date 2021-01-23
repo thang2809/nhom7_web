@@ -1,0 +1,16 @@
+﻿@model IEnumerable<PizzaHut.Models.Mcategory>
+<nav class="category-nav white-nav  ">
+    <div>
+        <a href="javascript:void(0)" class="category-trigger">
+            <i class="fa fa-bars"></i>Chọn loại sản phẩm
+        </a>
+        <ul class="category-menu">
+            @foreach (var item in Model)
+            {
+                <li class="cat-item "><a href="~/@item.slug">@item.name</a></li>
+            }
+            <li class="cat-item hidden-menu-item"><a href="#">Indoor Living</a></li>
+            <li class="cat-item"><a href="#" class="js-expand-hidden-menu">Xem thêm</a></li>
+        </ul>
+    </div>
+</nav>

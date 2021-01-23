@@ -1,0 +1,7 @@
+﻿@model IEnumerable<PizzaHut.Models.Mmenu>
+<ul class="mobile-menu main-mobile-menu">
+    @foreach (var item in Model)
+    {
+        @Html.Action("_mobile_submainmenu", "Modules", new { id = item.ID })
+    }
+</ul>
